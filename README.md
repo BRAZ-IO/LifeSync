@@ -611,25 +611,6 @@ npm run test:e2e
 npm run test:coverage
 ```
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Team
-
-- **Lead Backend Developer**: [Backend Dev Name]
-- **Lead Frontend Developer**: [Frontend Dev Name]
-- **DevOps Engineer**: [DevOps Name]
-- **UI/UX Designer**: [Designer Name]
-- **Product Manager**: [PM Name]
-
-## 📞 Support & Contact
-
-For support and inquiries:
-- **Email**: support@lifesync.com
-- **GitHub Issues**: [Create an issue](https://github.com/your-username/LifeSync/issues)
-- **Discord Community**: [Join our Discord](https://discord.gg/lifesync)
-- **Documentation**: [docs.lifesync.com](https://docs.lifesync.com)
 
 ## 🚀 Deployment
 
