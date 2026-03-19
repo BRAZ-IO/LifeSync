@@ -3,6 +3,7 @@ com\lifesync\service\impl\HabitServiceImpl.class
 com\lifesync\config\JwtConfig.class
 com\lifesync\repository\UserRepository.class
 com\lifesync\service\HabitService.class
+com\lifesync\config\DataInitializer.class
 com\lifesync\repository\HabitRepository.class
 com\lifesync\LifeSyncApplication.class
 com\lifesync\dto\UserDTO.class

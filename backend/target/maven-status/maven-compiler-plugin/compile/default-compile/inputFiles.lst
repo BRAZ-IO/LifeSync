@@ -12,6 +12,7 @@ C:\Users\User\Documents\LifeSync\backend\src\main\java\com\lifesync\LifeSyncAppl
 C:\Users\User\Documents\LifeSync\backend\src\main\java\com\lifesync\controller\HabitController.java
 C:\Users\User\Documents\LifeSync\backend\src\main\java\com\lifesync\dto\UserDTO.java
 C:\Users\User\Documents\LifeSync\backend\src\main\java\com\lifesync\service\UserService.java
+C:\Users\User\Documents\LifeSync\backend\src\main\java\com\lifesync\config\DataInitializer.java
 C:\Users\User\Documents\LifeSync\backend\src\main\java\com\lifesync\dto\HabitDTO.java
 C:\Users\User\Documents\LifeSync\backend\src\main\java\com\lifesync\entity\HabitCompletion.java
 C:\Users\User\Documents\LifeSync\backend\src\main\java\com\lifesync\controller\AuthController.java
