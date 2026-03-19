@@ -1,0 +1,71 @@
+# Development-specific OpenAPI configuration
+springdoc:
+  api-docs:
+    enabled: true
+    resolve-schema-properties: true
+  
+  swagger-ui:
+    enabled: true
+    try-it-out-enabled: true
+    operations-sorter: method
+    tags-sorter: alpha
+    doc-expansion: all
+    display-request-duration: true
+    show-extensions: true
+    show-common-extensions: true
+    disable-swagger-default-url: false
+    display-operation-id: true
+    default-models-expand-depth: 2
+    default-model-expand-depth: 2
+    # Enhanced filtering for development
+    filter: true
+    filter-string: ""
+    # Syntax highlighting with multiple themes
+    syntax-highlight:
+      activated: true
+      theme: monokai
+    
+  # Development settings
+  show-actuator: true
+  auto-tag-classes: true
+  
+  # Disable cache for development
+  cache:
+    disabled: true
+    
+  # Verbose group configuration
+  group-configs:
+    - group: 'auth-api'
+      display-name: '🔐 Authentication API'
+      packages-to-scan: 'com.lifesync.controller'
+      paths-to-match: '/api/auth/**'
+    - group: 'users-api'
+      display-name: '👤 Users API'
+      packages-to-scan: 'com.lifesync.controller'
+      paths-to-match: '/api/users/**'
+    - group: 'habits-api'
+      display-name: '📈 Habits API'
+      packages-to-scan: 'com.lifesync.controller'
+      paths-to-match: '/api/habits/**'
+    - group: 'workouts-api'
+      display-name: '💪 Workouts API'
+      packages-to-scan: 'com.lifesync.controller'
+      paths-to-match: '/api/workouts/**'
+    - group: 'sessions-api'
+      display-name: '⏱️ Sessions API'
+      packages-to-scan: 'com.lifesync.controller'
+      paths-to-match: '/api/sessions/**'
+    - group: 'progress-api'
+      display-name: '📊 Progress API'
+      packages-to-scan: 'com.lifesync.controller'
+      paths-to-match: '/api/progress/**'
+    - group: 'ai-api'
+      display-name: '🤖 AI Coach API'
+      packages-to-scan: 'com.lifesync.controller'
+      paths-to-match: '/api/ai/**'
+
+# Enhanced logging for development
+logging:
+  level:
+    org.springdoc: DEBUG
+    io.swagger: DEBUG

@@ -25,8 +25,8 @@ public class WorkoutSessionDTO {
     private String notes;
 
     @NotNull(message = "Intensity is required")
-    @Min(value = 1.0, message = "Intensity must be at least 1")
-    @Max(value = 10.0, message = "Intensity cannot exceed 10")
+    @Min(value = 1, message = "Intensity must be at least 1")
+    @Max(value = 10, message = "Intensity cannot exceed 10")
     private Double intensity;
 
     private Boolean completed;

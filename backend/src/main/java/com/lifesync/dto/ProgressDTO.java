@@ -16,16 +16,16 @@ public class ProgressDTO {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
 
-    @Min(value = 30.0, message = "Weight must be at least 30 kg")
-    @Max(value = 300.0, message = "Weight cannot exceed 300 kg")
+    @Min(value = 30, message = "Weight must be at least 30 kg")
+    @Max(value = 300, message = "Weight cannot exceed 300 kg")
     private Double weight;
 
     @Min(value = 1, message = "Body fat must be at least 1%")
     @Max(value = 70, message = "Body fat cannot exceed 70%")
     private Integer bodyFat;
 
-    @Min(value = 10.0, message = "Muscle mass must be at least 10 kg")
-    @Max(value = 150.0, message = "Muscle mass cannot exceed 150 kg")
+    @Min(value = 10, message = "Muscle mass must be at least 10 kg")
+    @Max(value = 150, message = "Muscle mass cannot exceed 150 kg")
     private Double muscleMass;
 
     private Map<String, Double> measurements; // chest, waist, arms, legs, etc.
@@ -46,8 +46,8 @@ public class ProgressDTO {
     @Max(value = 100, message = "Metabolic age cannot exceed 100")
     private Integer metabolicAge;
 
-    @Min(value = 1.0, message = "Bone mass must be at least 1 kg")
-    @Max(value = 10.0, message = "Bone mass cannot exceed 10 kg")
+    @Min(value = 1, message = "Bone mass must be at least 1 kg")
+    @Max(value = 10, message = "Bone mass cannot exceed 10 kg")
     private Double boneMass;
 
     @Min(value = 1, message = "Muscle quality must be at least 1")

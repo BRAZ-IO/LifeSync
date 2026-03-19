@@ -1,0 +1,32 @@
+# Production-specific OpenAPI configuration
+springdoc:
+  api-docs:
+    enabled: true
+  
+  swagger-ui:
+    enabled: true
+    try-it-out-enabled: false  # Disable in production
+    operations-sorter: alpha
+    tags-sorter: alpha
+    doc-expansion: none
+    display-request-duration: false  # Hide performance info in production
+    
+  # Production security settings
+  show-actuator: false
+  
+  # Cache for performance
+  cache:
+    disabled: false
+    
+  # Group configuration for production
+  group-configs:
+    - group: 'public-api'
+      display-name: 'LifeSync Public API v2.0'
+      packages-to-scan: 'com.lifesync.controller'
+      paths-to-match: '/api/**'
+
+# Logging for production
+logging:
+  level:
+    org.springdoc: WARN
+    io.swagger: WARN
